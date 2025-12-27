@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: amazon-products-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn api_server:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DB_PATH
+        value: amazon_products.db

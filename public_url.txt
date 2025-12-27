@@ -1,0 +1,4 @@
+Public URL: https://unmuscled-mucic-kamden.ngrok-free.dev
+Dashboard: https://unmuscled-mucic-kamden.ngrok-free.dev
+API Products: https://unmuscled-mucic-kamden.ngrok-free.dev/api/products
+API Stats: https://unmuscled-mucic-kamden.ngrok-free.dev/api/stats

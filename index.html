@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Products Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 Amazon Products Dashboard</h1>
+            <p class="subtitle">Top Best Sellers from Home & Kitchen Category</p>
+        </header>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-label">Total Products</div>
+                <div class="stat-value" id="total-products">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Average Price</div>
+                <div class="stat-value" id="avg-price">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Average Rating</div>
+                <div class="stat-value" id="avg-rating">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Prime Products</div>
+                <div class="stat-value" id="prime-count">-</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="rank">Rank (Default)</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Rating: High to Low</option>
+                <option value="rating-asc">Rating: Low to High</option>
+            </select>
+        </div>
+
+        <div id="products-container">
+            <div class="loading">Loading products...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

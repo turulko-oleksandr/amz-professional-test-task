@@ -4,6 +4,7 @@ import sqlite3
 import os
 
 app = Flask(__name__)
+app.debug = os.environ.get("IS_DEBUG_MODE", True)
 CORS(app)
 
 # Render.com automatically provides PORT environment variable
